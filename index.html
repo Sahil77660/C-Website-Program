@@ -97,17 +97,18 @@
   .explore:hover {
     background: black;
   }
-
   .view {
-    display: inline;
+    text-decoration: none;
     margin-left: 30px;
-    background-color: whitesmoke;
+    background-color: white;
     border: 2px solid whitesmoke;
-    padding: 17px;
+    padding: 18px;
+    border-radius: 7px;
+    color: #182848;
+    font-weight: bold;
   }
-
   .view:hover {
-    border: 2px solid black;
+    border: 1px solid black;
 
     border-radius: 15px;
   }
@@ -162,11 +163,12 @@
     border-radius: 17px;
     font-weight: bold;
     text-align: center;
+    transition: 0.3s;
   }
 
   .item:hover {
     transform: translateY(-6px);
-    /* background-color: white; */
+ 
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
   }
 
@@ -185,7 +187,7 @@
   }
 
   .categories {
-    padding: 70px 8%;
+    padding: 30px 8%;
     background-color: #f4f7fb;
     margin-top: 127px;
     text-align: center;
@@ -217,15 +219,59 @@
     border-radius: 6px;
     color:#182848;
     font-weight: bold;
+    transition: 0.3s;
   }
   .categories-grid a{
 
     text-decoration: none;
   }
   .catagory:hover{
-    background-color: #4b6cb7;
+    background: #4b6cb7;
     color: white;
-    transform:translateY(-8px)
+    transform:translateY(-4px)
+  }
+  .ready{
+    padding: 76px 17%;
+  }
+  .end{
+    /* background-color: #182848; */
+    background:linear-gradient(90deg,#182848,#4b6cb7);
+    text-align: center;
+    padding: 46px 8%;
+    border-radius: 15px;
+    margin-top: 56px;
+    margin:56px auto;
+    width: 50vw;
+  }
+  .ready-heading{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1.8;
+  }
+  .afterheading{
+    color: white;
+    line-height: 1.4;
+
+  }
+  .endview{
+    display: inline-block;
+    text-decoration: none;
+    color:#182848;
+    margin-top: 26px;
+    background-color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-weight: bold;
+  }
+  .footer{
+    background-color: #182848;
+    padding: 15px;
+   text-align: center;
+  }
+  .footer-heading{
+  color: grey;
+  font-size: 16px;
   }
 </style>
 
@@ -249,8 +295,8 @@
         syntax, input and <br />output examples. A simple place to understand
         <br />and practice fundamental <br />C programs.
       </div>
-      <div class="explore">Explore Programms</div>
-      <div class="view">View Categories</div>
+    <a href="index2.html" class="explore">Explore Program →</a>
+    <a href="#categories-grid" class="view">View Category</a>
     </div>
     <div class="code">
       <span style="color: aqua">#include </span>
@@ -315,18 +361,24 @@
       <br />
       <span class="select1">Select a category to start learning.</span>
     </div>
-    <div class="categories-grid">
-     <a href="" class="catagory">BASIC INPUT OUTPUT</a>
-     <a href="" class="catagory"></a>
-     <a href="" class="catagory"></a>
-     <a href="" class="catagory"></a>
-     <a href="" class="catagory"></a>
-     <a href="" class="catagory"></a>
-     <a href="" class="catagory"></a>
-     <a href="" class="catagory"></a>
+    <div class="categories-grid" id="categories-grid">
+     <a href="/basic program/basic_index.html" class="catagory">BASIC INPUT OUTPUT</a>
+     <a href="/operators/operator.index.html" class="catagory">OPERATORS</a>
+     <a href="/decision control structure/decision_control.html" class="catagory">DECISION CONTROL STRUCTURE</a>
+     <a href="" class="catagory">Loops</a>
+     <a href="" class="catagory">Array</a>
+     <a href="" class="catagory">Function</a>
+     <a href="" class="catagory">Strings</a>
+     <a href="" class="catagory">STRUCTURES</a>
 
     </div>
+    <div class="end">
+    <div class="ready-heading">Ready to Explore C Programs?</div>
+    <div class="afterheading">Start with basic programs and gradually move towards advanced concepts.</div>
+      <a href="index2.html" class="endview">View All programs →</a>
+  </div>
   </section>
+  <section class="footer"> <div class="footer-heading">© 2026 C Porgamming lab</div></section>
 </body>
 
 </html>
